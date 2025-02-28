@@ -1,5 +1,8 @@
 package com.example;
 
+import lombok.*;
+
+@Data
 public class ForceUser {
     private long id;
     private String name;
