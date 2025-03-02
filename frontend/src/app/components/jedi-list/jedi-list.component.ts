@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { JediService } from '../../services/jedi.service';
 import { Jedi } from '../../models/jedi';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-jedi-list',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './jedi-list.component.html',
   styleUrl: './jedi-list.component.css'
 })

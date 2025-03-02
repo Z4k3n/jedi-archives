@@ -3,10 +3,10 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Jedi } from '../models/jedi';
 
-const baseUrl = 'http://localhost:8080/api/jedi';
+const baseUrl = 'http://localhost:8080/api/jedis';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 
 export class JediService {
