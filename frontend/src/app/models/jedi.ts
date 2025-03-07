@@ -1,10 +1,6 @@
-export class Jedi {
-    id?: number;
-    name?: string;
-    rank?: string;
-    lightsaberColor?: string;
-    homeworld?: string;
+import { ForceUser } from './force-user';
+
+export class Jedi extends ForceUser {
     master?: string;
     padawan?: string;
-    age?: number;
 }
