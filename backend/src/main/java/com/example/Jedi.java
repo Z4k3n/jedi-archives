@@ -4,8 +4,8 @@ public class Jedi extends ForceUser {
     private String master;
     private String padawan;
 
-    public Jedi(long id, String name, String rank, String lightsaberColor, String homeworld, String master, String padawan, int age, int powerLevel) {
-        super(id, name, rank, lightsaberColor, homeworld, age, powerLevel);
+    public Jedi(long id, String name, String rank, String lightsaberColor, String homeworld, String master, String padawan, int age, int powerLevel, String imageUrl, boolean alive) {
+        super(id, name, rank, lightsaberColor, homeworld, age, powerLevel, imageUrl, alive);
         this.master = master;
         this.padawan = padawan;
     }

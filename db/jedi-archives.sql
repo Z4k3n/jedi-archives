@@ -20,6 +20,8 @@ CREATE TABLE force_users (
     homeworld VARCHAR(100),
     age INT,
     power_level TINYINT CHECK (power_level BETWEEN 1 AND 5),
+    image_url VARCHAR(255),
+    alive BOOLEAN,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     CONSTRAINT fk_homeworld FOREIGN KEY (homeworld) REFERENCES planets(name)

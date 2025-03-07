@@ -6,4 +6,6 @@ export class ForceUser {
     homeworld?: string;
     age?: number;
     powerLevel?: number;
+    imageUrl?: string;
+    alive?: boolean;
 }
