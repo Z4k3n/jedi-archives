@@ -12,20 +12,18 @@ import java.util.List;
 public class JediController {
 
     @GetMapping
-    public List<Jedi> findAll(){
+    public List<Jedi> findAll() {
         System.out.println("findAll");
         return List.of(
-                new Jedi(1L, "Anakin"),
-                new Jedi(2L, "Luke"),
-                new Jedi(3L, "Yoda")
+                new Jedi(1L, "Anakin", "Knight", "Blue", "Tatooine", "Obi-Wan Kenobi", "Ahsoka Tano", 23),
+                new Jedi(2L, "Luke", "Master", "Green", "Tatooine", "Yoda", "Ben Solo", 53),
+                new Jedi(3L, "Yoda", "Grand Master", "Green", "Unknown", "N/A", "Luke Skywalker", 900)
         );
     }
 
     @GetMapping("/{id}")
-    public Jedi findById(@PathVariable Long id){
+    public Jedi findById(@PathVariable Long id) {
         System.out.println("findById " + id);
-        return new Jedi(id, "Jedi example");
+        return new Jedi(id, "Jedi example", "Rank example", "Color example", "Homeworld example", "Master example", "Padawan example", 100);
     }
-
-
 }
